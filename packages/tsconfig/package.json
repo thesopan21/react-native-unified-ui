@@ -1,0 +1,19 @@
+{
+  "name": "@rn-unified-ui/tsconfig",
+  "version": "0.0.1",
+  "description": "Shared TypeScript configuration for RN Unified UI",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "react-native.json",
+    "react.json"
+  ],
+  "keywords": [
+    "typescript",
+    "tsconfig"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "name": "RN Unified UI - Base Tokens",
+  "version": "0.0.1",
+  "colors": {
+    "light": {
+      "primary": "#3B82F6",
+      "primaryHover": "#2563EB",
+      "primaryActive": "#1D4ED8",
+      "secondary": "#8B5CF6",
+      "secondaryHover": "#7C3AED",
+      "secondaryActive": "#6D28D9",
+      "success": "#10B981",
+      "successHover": "#059669",
+      "successActive": "#047857",
+      "warning": "#F59E0B",
+      "warningHover": "#D97706",
+      "warningActive": "#B45309",
+      "error": "#EF4444",
+      "errorHover": "#DC2626",
+      "errorActive": "#B91C1C",
+      "background": "#FFFFFF",
+      "backgroundSecondary": "#F9FAFB",
+      "surface": "#FFFFFF",
+      "surfaceHover": "#F3F4F6",
+      "border": "#E5E7EB",
+      "borderHover": "#D1D5DB",
+      "text": {
+        "primary": "#111827",
+        "secondary": "#6B7280",
+        "tertiary": "#9CA3AF",
+        "disabled": "#D1D5DB",
+        "inverse": "#FFFFFF"
+      }
+    },
+    "dark": {
+      "primary": "#60A5FA",
+      "primaryHover": "#3B82F6",
+      "primaryActive": "#2563EB",
+      "secondary": "#A78BFA",
+      "secondaryHover": "#8B5CF6",
+      "secondaryActive": "#7C3AED",
+      "success": "#34D399",
+      "successHover": "#10B981",
+      "successActive": "#059669",
+      "warning": "#FBBF24",
+      "warningHover": "#F59E0B",
+      "warningActive": "#D97706",
+      "error": "#F87171",
+      "errorHover": "#EF4444",
+      "errorActive": "#DC2626",
+      "background": "#111827",
+      "backgroundSecondary": "#1F2937",
+      "surface": "#1F2937",
+      "surfaceHover": "#374151",
+      "border": "#374151",
+      "borderHover": "#4B5563",
+      "text": {
+        "primary": "#F9FAFB",
+        "secondary": "#D1D5DB",
+        "tertiary": "#9CA3AF",
+        "disabled": "#6B7280",
+        "inverse": "#111827"
+      }
+    }
+  },
+  "spacing": {
+    "none": 0,
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 40,
+    "3xl": 48,
+    "4xl": 64,
+    "5xl": 80,
+    "6xl": 96
+  },
+  "typography": {
+    "display": {
+      "fontSize": 40,
+      "lineHeight": 48,
+      "fontWeight": "700",
+      "letterSpacing": -0.5
+    },
+    "heading": {
+      "fontSize": 32,
+      "lineHeight": 40,
+      "fontWeight": "700",
+      "letterSpacing": -0.4
+    },
+    "title": {
+      "fontSize": 24,
+      "lineHeight": 32,
+      "fontWeight": "600",
+      "letterSpacing": -0.3
+    },
+    "body": {
+      "fontSize": 16,
+      "lineHeight": 24,
+      "fontWeight": "400",
+      "letterSpacing": 0
+    },
+    "caption": {
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontWeight": "400",
+      "letterSpacing": 0
+    },
+    "label": {
+      "fontSize": 12,
+      "lineHeight": 16,
+      "fontWeight": "500",
+      "letterSpacing": 0.3
+    }
+  },
+  "radius": {
+    "none": 0,
+    "sm": 4,
+    "md": 8,
+    "lg": 16,
+    "xl": 24,
+    "full": 9999
+  },
+  "shadows": {
+    "none": {
+      "shadowColor": "#000000",
+      "shadowOffset": { "width": 0, "height": 0 },
+      "shadowOpacity": 0,
+      "shadowRadius": 0,
+      "elevation": 0
+    },
+    "sm": {
+      "shadowColor": "#000000",
+      "shadowOffset": { "width": 0, "height": 1 },
+      "shadowOpacity": 0.05,
+      "shadowRadius": 2,
+      "elevation": 1
+    },
+    "md": {
+      "shadowColor": "#000000",
+      "shadowOffset": { "width": 0, "height": 2 },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 4,
+      "elevation": 2
+    },
+    "lg": {
+      "shadowColor": "#000000",
+      "shadowOffset": { "width": 0, "height": 4 },
+      "shadowOpacity": 0.15,
+      "shadowRadius": 8,
+      "elevation": 4
+    },
+    "xl": {
+      "shadowColor": "#000000",
+      "shadowOffset": { "width": 0, "height": 8 },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 16,
+      "elevation": 8
+    }
+  },
+  "motion": {
+    "duration": {
+      "fast": 150,
+      "normal": 250,
+      "slow": 350
+    },
+    "easing": {
+      "linear": [0, 0, 1, 1],
+      "ease": [0.25, 0.1, 0.25, 1],
+      "easeIn": [0.42, 0, 1, 1],
+      "easeOut": [0, 0, 0.58, 1],
+      "easeInOut": [0.42, 0, 0.58, 1]
+    }
+  },
+  "opacity": {
+    "disabled": 0.4,
+    "hover": 0.8,
+    "active": 0.6
+  },
+  "zIndex": {
+    "base": 0,
+    "dropdown": 1000,
+    "sticky": 1100,
+    "fixed": 1200,
+    "modal": 1300,
+    "popover": 1400,
+    "tooltip": 1500
+  }
+}
