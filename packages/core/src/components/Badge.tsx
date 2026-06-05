@@ -15,9 +15,7 @@ export const Badge: React.FC<BadgeProps> = ({
   children,
 }) => {
   if (dot) {
-    return (
-      <View style={[styles.dot, dotSizeStyles[size], variantStyles[variant]]} radius="full" />
-    );
+    return <View style={[styles.dot, dotSizeStyles[size], variantStyles[variant]]} radius="full" />;
   }
 
   const content = label || children;

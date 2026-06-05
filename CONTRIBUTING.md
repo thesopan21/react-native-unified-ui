@@ -5,6 +5,7 @@ Thank you for your interest in contributing to the React Native Unified UI Frame
 ## 🎯 Ways to Contribute
 
 ### 💻 Engineering
+
 - React Native components
 - Native modules (Kotlin/Swift)
 - Fabric integration
@@ -12,18 +13,21 @@ Thank you for your interest in contributing to the React Native Unified UI Frame
 - Testing
 
 ### 🎨 Design Systems
+
 - Token architecture
 - Accessibility improvements
 - Theme support
 - Component API design
 
 ### 📚 Documentation
+
 - Tutorials and guides
 - API references
 - Code examples
 - Migration guides
 
 ### 🛠️ Tooling
+
 - CLI development
 - Code generators
 - CI/CD improvements
@@ -32,6 +36,7 @@ Thank you for your interest in contributing to the React Native Unified UI Frame
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js >= 18.0.0
 - pnpm >= 8.0.0
 - Git
@@ -40,12 +45,14 @@ Thank you for your interest in contributing to the React Native Unified UI Frame
 
 1. Fork the repository
 2. Clone your fork:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/rn-unified-ui.git
    cd rn-unified-ui
    ```
 
 3. Install dependencies:
+
    ```bash
    pnpm install
    ```
@@ -58,31 +65,37 @@ Thank you for your interest in contributing to the React Native Unified UI Frame
 ## 📝 Development Workflow
 
 ### Building
+
 ```bash
 pnpm build
 ```
 
 ### Development Mode
+
 ```bash
 pnpm dev
 ```
 
 ### Running Tests
+
 ```bash
 pnpm test
 ```
 
 ### Linting
+
 ```bash
 pnpm lint
 ```
 
 ### Type Checking
+
 ```bash
 pnpm type-check
 ```
 
 ### Formatting
+
 ```bash
 pnpm format
 ```
@@ -109,6 +122,7 @@ footer
 ```
 
 ### Types
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -120,6 +134,7 @@ footer
 - `ci`: CI/CD changes
 
 ### Examples
+
 ```
 feat(core): add unified shadow component
 
@@ -137,20 +152,25 @@ docs(readme): update installation instructions
 5. **Link Issues**: Reference related issues
 
 ### PR Template
+
 ```markdown
 ## Description
+
 Brief description of changes
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
 ## Testing
+
 How has this been tested?
 
 ## Checklist
+
 - [ ] Code follows project style
 - [ ] Tests added/updated
 - [ ] Documentation updated
@@ -216,6 +236,7 @@ When suggesting features:
 ## 🙏 Recognition
 
 Contributors will be:
+
 - Listed in CONTRIBUTORS.md
 - Mentioned in release notes
 - Acknowledged in documentation

@@ -30,17 +30,21 @@ import { useTokens } from '@rn-unified-ui/tokens';
 
 function MyComponent() {
   const tokens = useTokens();
-  
+
   return (
-    <View style={{
-      padding: tokens.spacing.md,
-      backgroundColor: tokens.colors.surface,
-      borderRadius: tokens.radius.md,
-    }}>
-      <Text style={{
-        fontSize: tokens.typography.body.fontSize,
-        color: tokens.colors.text.primary,
-      }}>
+    <View
+      style={{
+        padding: tokens.spacing.md,
+        backgroundColor: tokens.colors.surface,
+        borderRadius: tokens.radius.md,
+      }}
+    >
+      <Text
+        style={{
+          fontSize: tokens.typography.body.fontSize,
+          color: tokens.colors.text.primary,
+        }}
+      >
         Hello World
       </Text>
     </View>
@@ -95,11 +99,9 @@ import { useTheme } from '@rn-unified-ui/tokens';
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  
+
   return (
-    <Button onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      Toggle Theme
-    </Button>
+    <Button onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Toggle Theme</Button>
   );
 }
 ```
@@ -107,30 +109,38 @@ function ThemeToggle() {
 ## Token Categories
 
 ### Colors
+
 - `primary`, `secondary`, `success`, `warning`, `error`
 - `background`, `surface`, `border`
 - `text.primary`, `text.secondary`, `text.disabled`
 
 ### Typography
+
 - `display`, `heading`, `title`, `body`, `caption`, `label`
 - Font size, line height, font weight
 
 ### Spacing
+
 - `none`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`
 
 ### Radius
+
 - `none`, `sm`, `md`, `lg`, `full`
 
 ### Shadows
+
 - `none`, `sm`, `md`, `lg`, `xl`
 
 ### Motion
+
 - Duration and easing curves
 
 ### Opacity
+
 - `disabled`, `hover`, `active`
 
 ### Z-Index
+
 - Layering system
 
 ## API Reference
