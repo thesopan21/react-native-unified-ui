@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "composite": false,
+    "incremental": false,
+    "strict": true,
+    "paths": {
+      "@rn-unified-ui/core": [
+        "../../packages/core/src"
+      ],
+      "@rn-unified-ui/tokens": [
+        "../../packages/tokens/src"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
