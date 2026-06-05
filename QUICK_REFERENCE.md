@@ -86,67 +86,73 @@ setTheme(theme === 'light' ? 'dark' : 'light');
 import { createTheme } from '@rn-unified-ui/tokens';
 
 const customTheme = createTheme({
-  colors: { primary: '#FF6B6B' }
+  colors: { primary: '#FF6B6B' },
 });
 ```
 
 ## 📐 Token Reference
 
 ### Colors
+
 ```tsx
-tokens.colors.primary
-tokens.colors.secondary
-tokens.colors.success
-tokens.colors.warning
-tokens.colors.error
-tokens.colors.background
-tokens.colors.surface
-tokens.colors.border
-tokens.colors.text.primary
-tokens.colors.text.secondary
+tokens.colors.primary;
+tokens.colors.secondary;
+tokens.colors.success;
+tokens.colors.warning;
+tokens.colors.error;
+tokens.colors.background;
+tokens.colors.surface;
+tokens.colors.border;
+tokens.colors.text.primary;
+tokens.colors.text.secondary;
 ```
 
 ### Spacing
+
 ```tsx
-tokens.spacing.xs    // 4
-tokens.spacing.sm    // 8
-tokens.spacing.md    // 16
-tokens.spacing.lg    // 24
-tokens.spacing.xl    // 32
-tokens.spacing['2xl'] // 40
+tokens.spacing.xs; // 4
+tokens.spacing.sm; // 8
+tokens.spacing.md; // 16
+tokens.spacing.lg; // 24
+tokens.spacing.xl; // 32
+tokens.spacing['2xl']; // 40
 ```
 
 ### Typography
+
 ```tsx
-tokens.typography.display
-tokens.typography.heading
-tokens.typography.title
-tokens.typography.body
-tokens.typography.caption
-tokens.typography.label
+tokens.typography.display;
+tokens.typography.heading;
+tokens.typography.title;
+tokens.typography.body;
+tokens.typography.caption;
+tokens.typography.label;
 ```
 
 ### Radius
+
 ```tsx
-tokens.radius.none  // 0
-tokens.radius.sm    // 4
-tokens.radius.md    // 8
-tokens.radius.lg    // 16
-tokens.radius.full  // 9999
+tokens.radius.none; // 0
+tokens.radius.sm; // 4
+tokens.radius.md; // 8
+tokens.radius.lg; // 16
+tokens.radius.full; // 9999
 ```
 
 ### Shadows
+
 ```tsx
-tokens.shadows.none
-tokens.shadows.sm
-tokens.shadows.md
-tokens.shadows.lg
-tokens.shadows.xl
+tokens.shadows.none;
+tokens.shadows.sm;
+tokens.shadows.md;
+tokens.shadows.lg;
+tokens.shadows.xl;
 ```
 
 ## 🎯 Component Props Quick Reference
 
 ### View
+
 ```tsx
 <View
   elevation="none" | "sm" | "md" | "lg" | "xl"
@@ -157,6 +163,7 @@ tokens.shadows.xl
 ```
 
 ### Text
+
 ```tsx
 <Text
   variant="display" | "heading" | "title" | "body" | "caption" | "label"
@@ -167,6 +174,7 @@ tokens.shadows.xl
 ```
 
 ### Pressable
+
 ```tsx
 <Pressable
   onPress={() => {}}
@@ -176,6 +184,7 @@ tokens.shadows.xl
 ```
 
 ### Container
+
 ```tsx
 <Container
   maxWidth="sm" | "md" | "lg" | "xl" | "full"
@@ -185,6 +194,7 @@ tokens.shadows.xl
 ```
 
 ### Stack
+
 ```tsx
 <Stack
   direction="row" | "column"
@@ -198,38 +208,39 @@ tokens.shadows.xl
 ## 💡 Common Use Cases
 
 ### Card
+
 ```tsx
 <View elevation="md" radius="lg" padding="md">
-  <Text variant="title" weight="semibold">Card Title</Text>
+  <Text variant="title" weight="semibold">
+    Card Title
+  </Text>
   <Text variant="body">Card content goes here</Text>
 </View>
 ```
 
 ### Button
+
 ```tsx
 <Pressable onPress={handlePress} feedback="scale">
-  <View 
-    padding="md" 
-    radius="md"
-    style={{ backgroundColor: tokens.colors.primary }}
-  >
-    <Text style={{ color: tokens.colors.text.inverse }}>
-      Button Text
-    </Text>
+  <View padding="md" radius="md" style={{ backgroundColor: tokens.colors.primary }}>
+    <Text style={{ color: tokens.colors.text.inverse }}>Button Text</Text>
   </View>
 </Pressable>
 ```
 
 ### Form Field
+
 ```tsx
 <Stack direction="column" spacing="sm">
-  <Text variant="label" weight="medium">Label</Text>
-  <View 
-    padding="sm" 
+  <Text variant="label" weight="medium">
+    Label
+  </Text>
+  <View
+    padding="sm"
     radius="md"
-    style={{ 
+    style={{
       borderWidth: 1,
-      borderColor: tokens.colors.border 
+      borderColor: tokens.colors.border,
     }}
   >
     <TextInput placeholder="Enter value..." />
@@ -238,12 +249,15 @@ tokens.shadows.xl
 ```
 
 ### List Item
+
 ```tsx
 <Pressable onPress={handlePress} feedback="opacity">
   <Stack direction="row" spacing="md" align="center">
     <View /* icon */ />
     <Stack direction="column" spacing="xs">
-      <Text variant="body" weight="medium">Title</Text>
+      <Text variant="body" weight="medium">
+        Title
+      </Text>
       <Text variant="caption" color={tokens.colors.text.secondary}>
         Subtitle
       </Text>
@@ -290,6 +304,7 @@ pnpm clean
 ## 🐛 Troubleshooting
 
 ### Theme not applying
+
 ```tsx
 // ❌ Wrong - missing ThemeProvider
 <App />
@@ -301,6 +316,7 @@ pnpm clean
 ```
 
 ### Tokens undefined
+
 ```tsx
 // ❌ Wrong - useTokens outside provider
 const tokens = useTokens(); // Error!
@@ -308,10 +324,11 @@ const tokens = useTokens(); // Error!
 // ✅ Correct - useTokens inside provider
 <ThemeProvider>
   <MyComponent /> {/* useTokens works here */}
-</ThemeProvider>
+</ThemeProvider>;
 ```
 
 ### TypeScript errors
+
 ```bash
 # Rebuild packages
 pnpm build

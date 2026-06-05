@@ -36,8 +36,8 @@ export const Pressable: React.FC<PressableProps> = ({
     feedback === 'opacity'
       ? { opacity: animatedValue }
       : feedback === 'scale'
-      ? { transform: [{ scale: animatedValue }] }
-      : {};
+        ? { transform: [{ scale: animatedValue }] }
+        : {};
 
   return (
     <RNPressable

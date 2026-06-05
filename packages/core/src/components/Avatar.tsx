@@ -38,11 +38,7 @@ export const Avatar: React.FC<AvatarProps> = ({
         />
       ) : (
         <View style={styles.fallback}>
-          <Text
-            variant="body"
-            weight="semibold"
-            style={[styles.fallbackText, { fontSize }]}
-          >
+          <Text variant="body" weight="semibold" style={[styles.fallbackText, { fontSize }]}>
             {fallback || '?'}
           </Text>
         </View>

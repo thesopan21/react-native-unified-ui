@@ -47,12 +47,10 @@ import { useTokens } from '@rn-unified-ui/tokens';
 
 function ThemedComponent() {
   const tokens = useTokens();
-  
+
   return (
     <View style={{ padding: tokens.spacing.md }}>
-      <Text style={{ color: tokens.colors.primary }}>
-        Themed Text
-      </Text>
+      <Text style={{ color: tokens.colors.primary }}>Themed Text</Text>
     </View>
   );
 }
@@ -61,18 +59,23 @@ function ThemedComponent() {
 ## Components
 
 ### View
+
 Enhanced View component with token support
 
 ### Text
+
 Typography component with variant support
 
 ### Pressable
+
 Touch-enabled component with consistent feedback
 
 ### Container
+
 Layout container with responsive utilities
 
 ### Stack
+
 Flexbox-based layout component
 
 ## API Reference

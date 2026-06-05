@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Initial project setup with Turborepo monorepo structure
 - Core package (`@rn-unified-ui/core`) with base primitives
   - View component with elevation, radius, and padding props
@@ -44,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Git configuration
 
 ### Documentation
+
 - Comprehensive README with project overview
 - CONTRIBUTING guide for contributors
 - ROADMAP outlining future development
@@ -54,6 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.0] - 2026-06-05
 
 ### Added
+
 - Initial project scaffolding
 - Repository initialization
 - License (MIT)
@@ -64,11 +67,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Release Notes
 
 ### Versioning Strategy
+
 - **Major**: Breaking changes
 - **Minor**: New features (backward compatible)
 - **Patch**: Bug fixes (backward compatible)
 
 ### Pre-release Tags
+
 - **alpha**: Early development, unstable API
 - **beta**: Feature complete, testing phase
 - **rc**: Release candidate, production-ready

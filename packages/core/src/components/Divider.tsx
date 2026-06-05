@@ -20,15 +20,15 @@ export const Divider: React.FC<DividerProps> = ({
         orientation === 'horizontal' ? styles.horizontal : styles.vertical,
         orientation === 'horizontal'
           ? {
-            height: thickness,
-            marginVertical: spacingValue,
-            backgroundColor: color,
-          }
+              height: thickness,
+              marginVertical: spacingValue,
+              backgroundColor: color,
+            }
           : {
-            width: thickness,
-            marginHorizontal: spacingValue,
-            backgroundColor: color,
-          },
+              width: thickness,
+              marginHorizontal: spacingValue,
+              backgroundColor: color,
+            },
       ]}
     />
   );

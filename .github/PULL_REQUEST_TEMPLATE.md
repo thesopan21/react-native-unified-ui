@@ -1,9 +1,11 @@
 # Pull Request
 
 ## Description
+
 <!-- Describe your changes in detail -->
 
 ## Type of Change
+
 <!-- Mark the relevant option with an "x" -->
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
@@ -15,32 +17,38 @@
 - [ ] Build/CI improvement
 
 ## Related Issues
+
 <!-- Link related issues here using #issue_number -->
 
 Fixes #
 Related to #
 
 ## Changes Made
+
 <!-- List the specific changes made -->
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Testing
+
 <!-- Describe the tests you ran and how to reproduce them -->
 
 ### Test Environment
+
 - Device/Emulator:
 - OS Version:
 - React Native Version:
 
 ### Steps to Test
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 ## Screenshots
+
 <!-- If applicable, add screenshots to demonstrate the changes -->
 
 ## Checklist
@@ -55,4 +63,5 @@ Related to #
 - [ ] Any dependent changes have been merged and published
 
 ## Additional Notes
+
 <!-- Add any additional context or notes for reviewers -->

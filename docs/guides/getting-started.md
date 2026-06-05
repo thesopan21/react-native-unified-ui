@@ -61,36 +61,29 @@ export function MainApp() {
       <Text variant="heading" weight="bold">
         Welcome to RN Unified UI
       </Text>
-      
-      <View 
-        elevation="md" 
-        radius="lg" 
+
+      <View
+        elevation="md"
+        radius="lg"
         padding="md"
-        style={{ 
+        style={{
           backgroundColor: tokens.colors.surface,
-          marginTop: tokens.spacing.md 
+          marginTop: tokens.spacing.md,
         }}
       >
-        <Text variant="body">
-          Build beautiful, consistent UIs across platforms.
-        </Text>
+        <Text variant="body">Build beautiful, consistent UIs across platforms.</Text>
       </View>
 
-      <Pressable 
-        onPress={() => console.log('Pressed!')}
-        feedback="scale"
-      >
-        <View 
-          padding="md" 
+      <Pressable onPress={() => console.log('Pressed!')} feedback="scale">
+        <View
+          padding="md"
           radius="md"
-          style={{ 
+          style={{
             backgroundColor: tokens.colors.primary,
-            marginTop: tokens.spacing.md 
+            marginTop: tokens.spacing.md,
           }}
         >
-          <Text style={{ color: tokens.colors.text.inverse }}>
-            Get Started
-          </Text>
+          <Text style={{ color: tokens.colors.text.inverse }}>Get Started</Text>
         </View>
       </Pressable>
     </View>
@@ -115,17 +108,21 @@ import { useTokens } from '@rn-unified-ui/tokens';
 
 function MyComponent() {
   const tokens = useTokens();
-  
+
   return (
-    <View style={{
-      padding: tokens.spacing.md,
-      backgroundColor: tokens.colors.surface,
-      borderRadius: tokens.radius.lg,
-    }}>
-      <Text style={{
-        fontSize: tokens.typography.body.fontSize,
-        color: tokens.colors.text.primary,
-      }}>
+    <View
+      style={{
+        padding: tokens.spacing.md,
+        backgroundColor: tokens.colors.surface,
+        borderRadius: tokens.radius.lg,
+      }}
+    >
+      <Text
+        style={{
+          fontSize: tokens.typography.body.fontSize,
+          color: tokens.colors.text.primary,
+        }}
+      >
         Styled with tokens
       </Text>
     </View>
@@ -196,7 +193,7 @@ import { useTheme } from '@rn-unified-ui/tokens';
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  
+
   return (
     <Pressable onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       <Text>Current: {theme}</Text>
